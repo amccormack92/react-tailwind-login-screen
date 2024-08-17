@@ -1,5 +1,5 @@
-import LoginBackground from "../components/LoginBackground";
-import LoginCard from "../components/LoginCard";
+import LoginBackground from "../components/LoginComponents/LoginBackground";
+import LoginCard from "../components/LoginComponents/LoginCard";
 
 export default function LoginPage() {
   return (

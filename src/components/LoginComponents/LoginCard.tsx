@@ -1,7 +1,7 @@
 import LoginForm from "./LoginForm";
 import BackgroundImage from "../assets/bm.jpg";
 import ManufactureLogo from "../assets/bmw.svg";
-import CompanyLogo from "./CompanyLogo";
+import CompanyLogo from "../CompanyLogo";
 
 export default function LoginCard() {
   return (
