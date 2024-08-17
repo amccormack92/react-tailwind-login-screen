@@ -18,7 +18,7 @@ export default function LoginForm() {
   return (
     <>
       <div className="flex flex-col w-1/2 lg:w-1/3">
-        <h1 className="font-sans md:text-3xl font-semibold">Welcome</h1>
+        <h1 className="font-sans md:text-3xl font-semibold">Welcome Back</h1>
         <form className="space-y-6 mt-4" onSubmit={handleSubmit(onSubmit)}>
           <div>
             <input
