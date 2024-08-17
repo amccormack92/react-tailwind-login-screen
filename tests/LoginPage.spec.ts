@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
 
+test.beforeEach(async ({ page }) => {
+  await page.goto("http://localhost:5173");
+});
 test.describe("Login Page Load Test", () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("http://localhost:5173");
-  });
   test("should load the login page successfully", async ({ page }) => {
     const logo = page.getByRole("heading", { name: "Welcome" });
     await expect(logo).toBeVisible();
@@ -24,9 +24,6 @@ test.describe("Login Page Load Test", () => {
 });
 
 test.describe("Login Form - Mobile View", () => {
-  test.beforeEach(async ({ page }) => {
-    await page.goto("http://localhost:5173");
-  });
   test.beforeEach(async ({ page }) => {
     await page.setViewportSize({ width: 414, height: 812 });
   });
