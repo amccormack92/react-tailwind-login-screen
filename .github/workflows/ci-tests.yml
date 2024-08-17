@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
       - name: Run Jest tests
-        run: npm test -- --ci --coverage
+        run: npm test
 
       - name: Upload Jest coverage report
         uses: actions/upload-artifact@v3
