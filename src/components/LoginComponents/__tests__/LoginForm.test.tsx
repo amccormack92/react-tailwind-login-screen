@@ -23,19 +23,19 @@ describe("LoginForm", () => {
     // Submit the form with empty fields
     await userEvent.click(submitButton);
 
-    // // Check for validation messages
+    // Check for validation messages
     expect(screen.getByText("Username is required")).toBeInTheDocument();
     expect(screen.getByText("Password is required")).toBeInTheDocument();
 
-    // // Enter invalid data and submit
+    // Enter invalid data and submit
     await userEvent.type(passwordInput, "short");
     await userEvent.click(submitButton);
 
-    // // Check for specific validation messages for short inputs
+    // Check for specific validation messages for short inputs
     expect(screen.getByText("Username is required")).toBeInTheDocument();
     expect(screen.getByText("Password is required")).toBeInTheDocument();
 
-    // // Enter valid data
+    // Enter valid data
     await userEvent.clear(usernameInput);
     await userEvent.type(usernameInput, "validusername");
     await userEvent.clear(passwordInput);
