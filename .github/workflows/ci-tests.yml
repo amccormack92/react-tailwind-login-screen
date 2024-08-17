@@ -3,10 +3,10 @@ name: CI Tests
 on:
   push:
     branches:
-      - main
+      - [main]
   pull_request:
     branches:
-      - main
+      - [main]
 
 jobs:
   jest-tests:
@@ -54,7 +54,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
 
       - name: Start Vite server and run Playwright tests
         run: |
