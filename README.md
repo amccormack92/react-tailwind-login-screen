@@ -26,6 +26,12 @@ This project started while I was waiting for my car to be serviced, and I decide
 
 The design of this login page was inspired by a concept I found on [Dribbble](https://dribbble.com/shots/3257502-Questionnaire-Login). I aimed to bring the vision to life with a focus on usability and aesthetics.
 
+## App Preview
+
+The app can be previewed thanks to GitHub Pages and can viewed in the link below.
+
+[Preview](https://amccormack92.github.io/react-tailwind-login-screen/)
+
 ## 🚀 Getting Started
 
 ### Installation
@@ -50,7 +56,7 @@ To get a local copy up and running, follow these steps:
    ```
    Open your browser and navigate to http://localhost:5173 to view the app.
 
-### Running Tests
+## Running Tests
 
 To run the tests locally:
 
@@ -63,8 +69,6 @@ To run the tests locally:
   npx playwright test
   ```
 
-### App Preview
+## Thank You
 
-The app can be previewed thanks to GitHub Pages and can viewed in the link below.
-
-[Preview](https://amccormack92.github.io/react-tailwind-login-screen/)
+Thank you for taking the time to look at my repo, have a great rest of your day :)
