@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# Responsive Login Page Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project started while I was waiting for my car to be serviced, and I decided to create a modern and responsive login page to pass the time. The goal was to implement a clean, functional, and well-tested component that showcases my front-end development skills.
 
-Currently, two official plugins are available:
+## 🛠️ Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React + Vite**: A fast and modern build tool that enhances the development experience with React.
+- **TypeScript**: Added type safety to the project, ensuring robust code.
+- **Tailwind CSS**: Employed a mobile-first, utility-first approach to create a fully responsive design.
+- **React Hook Form**: Simplified form handling with built-in support for validations.
+- **Zod**: Used for schema validation to ensure that the form inputs are correctly structured.
+- **Jest & React Testing Library**: For unit and integration testing of the components.
+- **Playwright**: For end-to-end testing, ensuring that the application works as expected across different screen sizes and browsers.
+- **GitHub Actions**: Set up continuous integration to automatically run tests on every push.
 
-## Expanding the ESLint configuration
+## 📐 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Responsive Design**: Mobile-first design approach, ensuring the login page works seamlessly across devices of all sizes.
+- **Form Validation**: Integrated Zod validation with React Hook Form to enforce rules and provide user-friendly error messages.
+- **Testing**:
+  - **Unit and Integration Tests**: Written using Jest and React Testing Library.
+  - **End-to-End Tests**: Leveraged Playwright to simulate user interactions and ensure the entire flow works as expected.
+- **Continuous Integration**: GitHub Actions configured to run tests automatically on every push to any branch.
 
-- Configure the top-level `parserOptions` property like this:
+## 🎨 Design Inspiration
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The design of this login page was inspired by a concept I found on [Dribbble](https://dribbble.com/shots/3257502-Questionnaire-Login). I aimed to bring the vision to life with a focus on usability and aesthetics.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+To get a local copy up and running, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/amccormack92/react-tailwind-login-screen
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd react-tailwind-login-screen
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to http://localhost:5173 to view the app.
+
+### Running Tests
+
+To run the tests locally:
+
+- **Jest Tests**:
+  ```bash
+  npm run test:jest
+  ```
+- **Playwright Tests**
+  ```bash
+  npx playwright test
+  ```
+
+### App Preview
+
+TThe app can be previewed thanks to GitHub Pages and can viewed in the link below.
