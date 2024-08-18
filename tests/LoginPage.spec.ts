@@ -3,7 +3,6 @@ import { test, expect } from "@playwright/test";
 test.beforeEach(async ({ page }) => {
   await page.goto("http://localhost:5173");
 });
-
 test.describe("Login Page Load Test", () => {
   test("should load the login page successfully", async ({ page }) => {
     const logo = page.getByRole("heading", { name: "Welcome" });
