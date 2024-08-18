@@ -65,4 +65,6 @@ To run the tests locally:
 
 ### App Preview
 
-TThe app can be previewed thanks to GitHub Pages and can viewed in the link below.
+The app can be previewed thanks to GitHub Pages and can viewed in the link below.
+
+[Preview](https://amccormack92.github.io/react-tailwind-login-screen/)
